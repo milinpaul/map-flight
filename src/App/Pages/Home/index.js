@@ -1,13 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import { connect } from 'react-redux'
 
-const PrimaryTitle = styled.h1`
-  font-size: 1.5rem;
-  text-align: center;
-`
+import HomeContainer from './Home.Container'
+import { getUserDataRequest } from './dux'
 
-const index = () => {
-  return <PrimaryTitle>Body Goes here!</PrimaryTitle>
+const mapStateToProps = (state) => ({
+  data: state.HomeReducer.data,
+  loading: state.HomeReducer.loading
+})
+
+const mapDispatchToProps = {
+  getUserDataRequest
 }
 
-export default index
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HomeContainer)

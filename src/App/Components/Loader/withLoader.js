@@ -2,7 +2,8 @@ import React from 'react'
 import { CircularProgress } from '@material-ui/core'
 import Backdrop from '@material-ui/core/Backdrop'
 
-const Index = () => {
+const withLoader = (Component) => ({ isLoading, ...props }) => {
+  if (!isLoading) return <Component {...props} />
   return (
     <Backdrop open>
       <CircularProgress color='secondary' size={60} />
@@ -10,4 +11,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default withLoader
