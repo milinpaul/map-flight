@@ -22,7 +22,7 @@ const Header = () => {
         <MenuButton edge='start' color='inherit' aria-label='menu'>
           <MenuIcon />
         </MenuButton>
-        <AppName variant='h6'>React Seed</AppName>
+        <AppName variant='h6'>React Redux Seed</AppName>
         <Button color='inherit'>Login</Button>
       </Toolbar>
     </AppBar>
