@@ -2,12 +2,12 @@ This is a Seed Project with Redux & Redux Saga for starting out an application.
 
 ## Technologies Used:
 
-- React JS
-- Redux
-- Redux Saga Middleware
-- Material UI for Component Library
-- React Router DOM for Routing
-- Testing Framework Jest
+- **React JS**
+- **Redux**
+- **Redux Saga Middleware**
+- **Material UI for Component Library**
+- **React Router DOM for Routing**
+- **Testing Framework Jest**
 
 ## Folder Structure
 
